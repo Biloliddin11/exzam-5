@@ -1,0 +1,234 @@
+.detail__wrapper {
+	margin-top: 120px;
+	display: flex;
+	gap: 60px;
+	.images__wrapper {
+		display: flex;
+		gap: 30px;
+		img {
+			background-color: #f5f5f5;
+		}
+		.small__images {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+			img {
+				background-color: #f5f5f5;
+				width: 170px;
+			}
+		}
+	}
+	.detail__content {
+		h5 {
+			font-size: 24px;
+			font-weight: 600;
+			font-family: 'Inter', serif;
+			margin-bottom: 16px;
+		}
+		display: flex;
+		flex-direction: column;
+		.items {
+			display: flex;
+			align-items: center;
+
+			gap: 10px;
+			.reviews {
+				display: flex;
+				align-items: center;
+				gap: 2px;
+			}
+			span {
+				font-size: 14px;
+				font-weight: 400;
+				color: gray;
+			}
+			p {
+				color: #00ff66;
+				font-size: 14px;
+				font-weight: 400;
+			}
+		}
+		strong {
+			margin: 16px 0;
+			font-size: 24px;
+			font-weight: 400;
+			font-family: 'Inter', serif;
+		}
+		.info__text {
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 21px;
+			padding-bottom: 24px;
+			border-bottom: 1px solid #000;
+		}
+		.buy__btns {
+			display: flex;
+			align-items: center;
+			gap: 17px;
+			margin-top: 24px;
+			flex-wrap: wrap;
+			.plus__minus__btn {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: fit-content;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				overflow: hidden;
+
+				button {
+					width: 50px;
+					height: 40px;
+					border: none;
+					background-color: #fff;
+					font-size: 16px;
+					font-weight: bold;
+					cursor: pointer;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					transition: background-color 0.3s ease;
+
+					&:nth-child(1) {
+						border-right: 1px solid #ccc;
+					}
+
+					&:nth-child(3) {
+						background-color: #db4444;
+						color: #fff;
+
+						&:hover {
+							background-color: #db4444;
+							color: #fff;
+						}
+					}
+
+					&:hover {
+						background-color: #db4444;
+						color: #fff;
+					}
+
+					&:focus {
+						outline: none;
+					}
+				}
+			}
+		}
+		.buy__now {
+			padding: 10px 40px;
+			background-color: #db4444;
+			border: 1px solid transparent;
+			color: #fff;
+			font-size: 16px;
+			border-radius: 4px;
+			cursor: pointer;
+			transition: 0.3s ease-in;
+			&:hover {
+				background-color: #fff;
+				border: 1px solid #db4444;
+				color: #db4444;
+			}
+		}
+		.btn__wishlist {
+			width: 40px;
+			height: 40px;
+			background-color: #fff;
+			border-radius: 4px;
+			border: 1px solid #9f9f9f;
+			cursor: pointer;
+			transition: 0.3s ease-in;
+			&:hover {
+				background-color: #ddd;
+			}
+		}
+	}
+	.delivery__wrapper {
+		width: 399px;
+		height: 180px;
+		margin-top: 40px;
+		display: flex;
+		flex-direction: column;
+		border: 1px solid #9f9f9f;
+		border-radius: 4px;
+		.delivery__content {
+			padding: 24px 16px;
+			display: flex;
+			align-items: center;
+			gap: 16px;
+			.desc__content {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+				span {
+					font-size: 16px;
+					font-weight: 500;
+				}
+				p {
+					font-size: 12px;
+					font-weight: 500;
+				}
+			}
+		}
+		.return__content {
+			border-top: 1px solid #ddd;
+			padding-top: 17px;
+			display: flex;
+			align-items: center;
+			gap: 16px;
+			padding: 20px 10px;
+			margin-bottom: 20px;
+
+			.return__desc {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+				span {
+					font-size: 16px;
+					font-weight: 500;
+				}
+				p {
+					font-size: 12px;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1220px) {
+	.detail__wrapper {
+		margin-top: 70px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		.images__wrapper {
+			display: flex;
+			align-items: start;
+			img {
+				width: 400px;
+			}
+			.small__images {
+				display: none;
+			}
+		}
+	}
+}
+@media (max-width: 450px) {
+	.detail__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		.images__wrapper {
+			img {
+				width: 300px;
+			}
+		}
+		.detail__content {
+			.delivery__wrapper {
+				width: 330px;
+			}
+		}
+	}
+}
