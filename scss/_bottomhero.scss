@@ -3,11 +3,11 @@
 	width: 100%;
 	height: 500px;
 	background-color: #000;
-	.bhero__wrapper {
+	.sec__hero__wrapper {
 		justify-content: center;
 		gap: 30px;
 		color: white;
-		.bhero__content {
+		.sec__hero__content {
 			margin-top: 60px;
 			span {
 				color: #00ff66;
@@ -66,7 +66,7 @@
 				}
 			}
 		}
-		.bhero__image {
+		.sec__hero__image {
 			img {
 				filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 1));
 			}
