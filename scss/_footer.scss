@@ -9,7 +9,7 @@ footer {
 		padding-bottom: 50px;
 		color: #fafafa;
 		flex-wrap: wrap;
-		.column__1 {
+		.account__1 {
 			display: flex;
 			flex-direction: column;
 			align-items: start;
@@ -48,7 +48,7 @@ footer {
 			}
 		}
 	}
-	.column__2 {
+	.account__2{
 		display: flex;
 		flex-direction: column;
 		gap: 24px;
@@ -66,7 +66,7 @@ footer {
 			}
 		}
 	}
-	.column__media {
+	.account__media {
 		display: flex;
 		flex-direction: column;
 		h5 {
