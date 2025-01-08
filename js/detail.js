@@ -1,4 +1,3 @@
-// Base URL for the API
 const BASE_URL = 'https://dummyjson.com'
 
 const detailWrapperEl = document.querySelector('.detail__wrapper')
